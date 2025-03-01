@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - JEE Main</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        html,body {
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: #d1e7fd !important;
+        }
+
+        .container {
+            margin-top: 80px;
+        }
+
+        .contact-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .contact-section h2 {
+            font-size: 36px;
+            color: #007bff;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .contact-section p {
+            font-size: 18px;
+            color: #555555;
+        }
+
+        .contact-form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-control {
+            border-radius: 8px;
+            margin-bottom: 15px;
+            padding: 15px;
+            font-size: 16px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            border-radius: 8px;
+            padding: 12px 30px;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .contact-details {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            color: #6c757d;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">JEE Main</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Contact Page Content -->
+<div class="container">
+    <!-- Contact Information Section -->
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need further information, feel free to reach out to us. We're here to help!</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <h3>Get in Touch</h3>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Additional Contact Details -->
+    <div class="contact-details">
+        <h3>Other Ways to Reach Us</h3>
+        <p>For urgent queries, you can reach out to us via the following methods:</p>
+        <ul>
+            <li>Email: <a href="mailto:jee@support.com">jee@support.com</a></li>
+            <li>Phone: +91-123-456-7890</li>
+            <li>Fax: +91-987-654-3210</li>
+            <li>Address: National Testing Agency, NTA Building, New Delhi, India</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>&copy; 2025 JEE Main. All rights reserved.</p>
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

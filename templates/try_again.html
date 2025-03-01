@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incorrect Password</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFCCCB; /* Light red color */
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #FF6347; /* Tomato red color */
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #FF6347; /* Tomato red */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #e55342;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Incorrect Password</h1>
+        <p>Please check your password and try again.</p>
+        <button onclick="window.location.href='loginPage.html'">Retry</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEE Main Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: #d1e7fd !important;
+        }
+        .container {
+            margin-top: 80px;
+        }
+        .section-title {
+            text-align: center;
+            color: #007bff;
+            font-size: 32px;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        .info-box {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        .info-box h4 {
+            font-size: 26px;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .info-box p {
+            font-size: 16px;
+            color: #555555;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            border-radius: 8px;
+            padding: 12px 25px;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">JEE Main</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/sign">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/option">Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Home Page Content -->
+<div class="container">
+
+    <!-- Information about JEE Main -->
+    <div class="section-title">
+        <h2>Welcome to JEE Main</h2>
+        <p>The Joint Entrance Examination (JEE) Main is one of the most important engineering entrance exams in India.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="info-box">
+                <h4>About JEE Main</h4>
+                <p>The JEE Main exam is conducted by the National Testing Agency (NTA) for admission to undergraduate engineering programs at various IITs, NITs, and other engineering colleges in India.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="info-box">
+                <h4>Eligibility Criteria</h4>
+                <p>To appear for JEE Main, candidates must have completed or be appearing in their 10+2 exams (or equivalent) with Physics, Chemistry, and Mathematics as core subjects.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exam Details -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="info-box">
+                <h4>Exam Pattern</h4>
+                <p>JEE Main is a computer-based test consisting of multiple-choice questions (MCQs) in two papers: Paper 1 (for B.E./B.Tech) and Paper 2 (for B.Arch/B.Planning). The exam duration is 3 hours, and the maximum score is 300 marks.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="info-box">
+                <h4>Important Dates</h4>
+                <p>The exam is typically held twice a year (January and April). The exact dates are announced by the NTA on the official website. Make sure to check the dates for the upcoming session.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registration Information -->
+    <div class="section-title">
+        <h3>Register Now for JEE Main</h3>
+        <p>Get ready to apply for JEE Main 2025! Fill out the registration form today to start your journey towards a successful career in engineering.</p>
+        <a href="/option" class="btn btn-primary">Register Now</a>
+    </div>
+    
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>JEE Main is organized by the National Testing Agency (NTA). All rights reserved.</p>
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

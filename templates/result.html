@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Registration</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            width: 100%;
+            margin: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        /* Table Styles */
+        .candidate-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            table-layout: fixed;
+        }
+
+        .candidate-table th, .candidate-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            word-wrap: break-word;
+        }
+
+        .candidate-table th {
+            background-color: #2980b9;
+            color: white;
+            font-size: 16px;
+        }
+
+        .candidate-table td {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .candidate-table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Print Button */
+        .print-button {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            display: block;
+            margin: 30px auto;
+            width: 200px;
+            text-align: center;
+        }
+        
+        /* Go Back Button */
+        .go-back-button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            display: block;
+            margin: 20px auto;
+            width: 200px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .print-button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .candidate-table th, .candidate-table td {
+                padding: 10px;
+            }
+
+            .print-button {
+                width: 100%;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+
+            .candidate-table th, .candidate-table td {
+                padding: 8px;
+                font-size: 12px;
+            }
+
+            .print-button {
+                font-size: 14px;
+                padding: 10px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Your Candidate Data is Successfully Registered!</h2>
+        
+        <table class="candidate-table">
+            <thead>
+                <tr>
+                    <th>Field</th>
+                    <th>Candidate-Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for candidate in candidates %}
+                <tr>
+                    <td>Name</td>
+                    <td>{{ candidate.name }}</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>{{ candidate.email }}</td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td>{{ candidate.phn }}</td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td>{{ candidate.dob }}</td>
+                </tr>
+                <tr>
+                    <td>Sex</td>
+                    <td>{{ candidate.sex }}</td>
+                </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>{{ candidate.cat }}</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>{{ candidate.ad }}</td>
+                </tr>
+                <tr>
+                    <td>State-1</td>
+                    <td>{{ candidate.s1 }}</td>
+                </tr>
+                <tr>
+                    <td>City-1</td>
+                    <td>{{ candidate.c1 }}</td>
+                </tr>
+                <tr>
+                    <td>State-2</td>
+                    <td>{{ candidate.s2 }}</td>
+                </tr>
+                <tr>
+                    <td>City-2</td>
+                    <td>{{ candidate.c2 }}</td>
+                </tr>
+                <tr>
+                    <td>State-3</td>
+                    <td>{{ candidate.s3 }}</td>
+                </tr>
+                <tr>
+                    <td>City-3</td>
+                    <td>{{ candidate.c3 }}</td>
+                </tr>
+                <tr>
+                    <td>Payment Mode</td>
+                    <td>{{ candidate.pay }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <button class="print-button" onclick="window.print()">Print Details</button>
+
+        <!-- Go Back Button -->
+        <a href="/" class="go-back-button">Go Back to Home Page</a>
+    </div>
+
+</body>
+</html>
+ 
